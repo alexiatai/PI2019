@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Reabilitação Infantil</title>
+    <link rel="icon" type="imagem/jpg" href="icone.jpg" />
+    <style>
+@import url(http://fonts.googleapis.com/css?family=Eczar|Muli);
+body {
+    background: #f2d9e6;
+    font-size: 22px;
+    font-family: 'Muli', sans-serif;
+}
+p {
+    color: black;
+
+}
+h1 {
+    color: black;
+    font-size: 60px;
+    margin-top: 100px;
+}
+span{
+    color: white; }
+h1 {
+    font-family: 'Eczar', serif;
+}
+p, h1, nav ul {
+    text-align: center;
+}
+nav {
+    margin: 20px auto;
+    background-color: black ;
+}
+nav ul {
+    padding: 0;
+      margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li {
+    display: inline-block;
+    background-color: black;
+}
+a {
+    display: block;
+    padding: 0 10px;   
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+/* Esconde os dropdowns por padrão */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}   
+/* Mostra os dropdowns quando mouse estiver sobre o elemento */
+nav ul li:hover > ul {
+    display: inherit;
+}   
+/* Primeira camada dropdown */
+nav ul ul li {
+    width: 170px;
+    display: list-item;
+    position: relative;
+    left: -70px;
+}
+/* Segunda, terceira e mais camadas dropdown */
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+/* Coloca ' •' quando o menu tiver submenu */
+li > a:after { content:  ' •'; }
+li > a:only-child:after { content: ''; }
+
+footer{
+    color: black;
+}
+
+
+</style>
+</head>
+
+<body>
+   
+<div id="container">
+    <nav>
+        <ul>
+            <li><a href="">Início</a></li>
+            <li><a href="">A</a></li>
+            <li><a href="">B</a></li>
+            <li><a href="">C</a></li>
+            <li><a href="">D</a></li>
+            <li><a href="">E</a></li>
+        </ul>
+    </nav>
+
+<br>
+
+</div>
+</body>
+</html>
+
