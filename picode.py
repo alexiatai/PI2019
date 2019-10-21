@@ -4,5 +4,6 @@ app = Flask(__name__)
 
 def pagina_web():
     return render_template("pi2019.html")
+@login_required
 
 app.run()
